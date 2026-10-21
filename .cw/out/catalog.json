@@ -1,0 +1,65 @@
+[
+  {
+    "kind": "skill",
+    "id": "cw-author",
+    "description": "Author a new primitive of this repository's charter, asking cw what its kind requires.",
+    "file": ".cw/out/skill/cw-author/index.md"
+  },
+  {
+    "kind": "skill",
+    "id": "cw-session-cost",
+    "description": "Answer what the sessions kept on this machine cost, per session and per day, at prices the developer types in or the model provider publishes.",
+    "file": ".cw/out/skill/cw-session-cost/index.md"
+  },
+  {
+    "kind": "script",
+    "id": "cw-session-tokens-counter",
+    "description": "Count the session's tokens when the agent stops, keep them on this machine, and say so at every mark.",
+    "file": ".cw/out/script/cw-session-tokens-counter/index.md"
+  },
+  {
+    "kind": "sensor",
+    "id": "cw-session-tokens-counter-on-stop",
+    "description": "Count the session's tokens each time the agent stops.",
+    "file": ".cw/out/sensor/cw-session-tokens-counter-on-stop/index.md"
+  },
+  {
+    "kind": "guide",
+    "id": "name-like-the-files-before-it",
+    "description": "A file of a pattern the repository already has follows the files before it — their shape and their names — rather than inventing names of its own.",
+    "file": ".cw/out/guide/name-like-the-files-before-it/index.md"
+  },
+  {
+    "kind": "guide",
+    "id": "no-arbitrary-function-split",
+    "description": "Read when you are about to write a helper function or split a function into smaller ones.",
+    "file": ".cw/out/guide/no-arbitrary-function-split/index.md"
+  },
+  {
+    "kind": "guide",
+    "id": "no-single-word-naming",
+    "description": "Name a variable as its context plus the type it holds — mcpPrimitive, rationaleId, primitiveById — never a vague word or a past participle.",
+    "file": ".cw/out/guide/no-single-word-naming/index.md"
+  },
+  {
+    "kind": "corpus",
+    "id": "why-no-single-word-naming",
+    "description": "Why a variable is named as its context plus the type it holds, and why participles and vague words are refused.",
+    "file": ".cw/out/corpus/why-no-single-word-naming/index.md"
+  },
+  {
+    "kind": "corpus",
+    "id": "why-write-changelog",
+    "description": "Why changelog entries are one short sentence for users, and how a release entry is written.",
+    "file": ".cw/out/corpus/why-write-changelog/index.md"
+  },
+  {
+    "kind": "guide",
+    "id": "write-changelog",
+    "description": "Write each CHANGELOG.md entry as one short plain sentence for the people who use what you ship, with no spec ids or internals, and mark Breaking only when they must edit what they wrote.",
+    "file": ".cw/out/guide/write-changelog/index.md",
+    "globs": [
+      "CHANGELOG.md"
+    ]
+  }
+]

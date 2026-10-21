@@ -1,0 +1,9 @@
+{
+  "description": "The naming and splitting guides come up on every file, and the changelog guide on the changelog.",
+  "cases": [
+    { "do": { "touchFile": "src/commands/BuildCommand.ts" }, "expect": { "activate": "name-like-the-files-before-it" } },
+    { "do": { "touchFile": "src/services/testService.ts" }, "expect": { "activate": "no-arbitrary-function-split" } },
+    { "do": { "touchFile": "src/services/testService.ts" }, "expect": { "activate": "no-single-word-naming" } },
+    { "do": { "touchFile": "CHANGELOG.md" }, "expect": { "activate": "write-changelog" } }
+  ]
+}
